@@ -1,24 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lKP-Qc-hh4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--To Beat-->
+        <scene sceneID="t9w-CY-tPF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController title="To Beat" id="f7I-N6-8cq" customClass="BeatTableViewController" customModule="iOS_BeltExam2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5eG-yh-So7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" id="Xsc-z2-85P" customClass="MyCell" customModule="iOS_BeltExam2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xsc-z2-85P" id="ygV-AP-3oa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWm-UC-Awz">
+                                            <rect key="frame" x="24" y="8" width="36" height="32"/>
+                                            <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="32" id="RVG-VJ-IwG"/>
+                                                <constraint firstAttribute="width" constant="36" id="s4B-xA-o0j"/>
+                                            </constraints>
+                                            <state key="normal" title="Beat">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="beatButtonPressed:" destination="f7I-N6-8cq" eventType="touchUpInside" id="MCv-iL-5oN"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfy-Fa-oVI">
+                                            <rect key="frame" x="123" y="8" width="100" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="PYU-ri-wVF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kfy-Fa-oVI" firstAttribute="leading" secondItem="pWm-UC-Awz" secondAttribute="trailing" constant="63" id="57w-Kj-Va2"/>
+                                        <constraint firstItem="pWm-UC-Awz" firstAttribute="leading" secondItem="ygV-AP-3oa" secondAttribute="leading" constant="24" id="60o-rO-alR"/>
+                                        <constraint firstItem="pWm-UC-Awz" firstAttribute="top" secondItem="ygV-AP-3oa" secondAttribute="top" constant="8" id="nrc-Do-Lvd"/>
+                                        <constraint firstItem="Kfy-Fa-oVI" firstAttribute="top" secondItem="ygV-AP-3oa" secondAttribute="top" constant="8" id="ou9-8g-nnn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="beatButton" destination="pWm-UC-Awz" id="Mk1-uN-sID"/>
+                                    <outlet property="titleLabel" destination="Kfy-Fa-oVI" id="jJj-dL-uld"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="f7I-N6-8cq" id="9N8-nG-XKW"/>
+                            <outlet property="delegate" destination="f7I-N6-8cq" id="qcA-x7-uPa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="To Beat" id="Utk-eN-nLa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bJq-Oc-taR">
+                            <connections>
+                                <segue destination="QM9-Uy-kT6" kind="presentation" identifier="Add" id="NXP-Jp-1bM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvh-xj-vEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1261.5999999999999" y="-18.440779610194905"/>
+        </scene>
+        <!--New  Beast-->
+        <scene sceneID="buU-WO-zd8">
+            <objects>
+                <viewController id="gTa-XS-CDt" customClass="AddItemViewController" customModule="iOS_BeltExam2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDR-Qg-n8E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mRt-Rn-gCZ">
+                                <rect key="frame" x="78" y="114" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tiN-ri-pgH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New  Beast" id="kDH-Vt-yhC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="piy-vY-aD8">
+                            <connections>
+                                <action selector="cancelPressed:" destination="gTa-XS-CDt" id="h9q-Z3-6XQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="CS9-Ku-5w5">
+                            <connections>
+                                <action selector="savePressed:" destination="gTa-XS-CDt" id="d3w-El-TPc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="mRt-Rn-gCZ" id="Kgr-YE-9eE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHQ-HX-Ghv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3184.8000000000002" y="-27.436281859070466"/>
+        </scene>
+        <!--Beated-->
+        <scene sceneID="y6R-nl-cWA">
+            <objects>
+                <tableViewController id="A2C-m9-ImQ" customClass="BeatedTableViewController" customModule="iOS_BeltExam2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vr6-x0-arh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeatedCell" textLabel="XMr-tr-R9q" detailTextLabel="D1m-9w-xEf" rowHeight="118" style="IBUITableViewCellStyleValue1" id="unc-yz-JV9" customClass="Complete" customModule="iOS_BeltExam2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="118"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="unc-yz-JV9" id="aTB-vq-C7R" customClass="Complete" customModule="iOS_BeltExam2" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XMr-tr-R9q">
+                                            <rect key="frame" x="16" y="49" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D1m-9w-xEf">
+                                            <rect key="frame" x="315" y="49" width="44" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="A2C-m9-ImQ" id="lvq-rN-MV9"/>
+                            <outlet property="delegate" destination="A2C-m9-ImQ" id="YMj-5N-Gbn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Beated" id="COE-DA-VKt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0C-cG-scf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471.19999999999999" y="660.71964017991013"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lGR-Cg-q9b">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lKP-Qc-hh4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iFj-Er-iaH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XDh-G2-xt0" kind="relationship" relationship="viewControllers" id="rcT-k9-vXM"/>
+                        <segue destination="A2C-m9-ImQ" kind="relationship" relationship="viewControllers" id="4jm-oi-xzA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6a-nO-yI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="156"/>
+        </scene>
+        <!--To Beat-->
+        <scene sceneID="NjB-je-ohQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XDh-G2-xt0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="To Beat" id="sff-E4-Kbq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gx5-W8-Tu8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f7I-N6-8cq" kind="relationship" relationship="rootViewController" id="4Cj-cQ-cGe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7T-nC-wHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462.39999999999998" y="-17.091454272863569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B20-bF-PXf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QM9-Uy-kT6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oKG-zn-eqU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gTa-XS-CDt" kind="relationship" relationship="rootViewController" id="Ehp-On-ond"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spe-eb-fL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="-47"/>
         </scene>
     </scenes>
 </document>

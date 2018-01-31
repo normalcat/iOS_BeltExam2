@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8DE877922020E1A6006E5D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877912020E1A6006E5D0F /* AppDelegate.swift */; };
-		8DE877942020E1A6006E5D0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877932020E1A6006E5D0F /* ViewController.swift */; };
+		8DE877942020E1A6006E5D0F /* BeatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877932020E1A6006E5D0F /* BeatTableViewController.swift */; };
 		8DE877972020E1A6006E5D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE877952020E1A6006E5D0F /* Main.storyboard */; };
 		8DE8779A2020E1A6006E5D0F /* iOS_BeltExam2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877982020E1A6006E5D0F /* iOS_BeltExam2.xcdatamodeld */; };
 		8DE8779C2020E1A6006E5D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE8779B2020E1A6006E5D0F /* Assets.xcassets */; };
 		8DE8779F2020E1A6006E5D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE8779D2020E1A6006E5D0F /* LaunchScreen.storyboard */; };
 		8DE877AA2020E1A6006E5D0F /* iOS_BeltExam2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877A92020E1A6006E5D0F /* iOS_BeltExam2Tests.swift */; };
 		8DE877B52020E1A6006E5D0F /* iOS_BeltExam2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877B42020E1A6006E5D0F /* iOS_BeltExam2UITests.swift */; };
+		8DE877C72020E99D006E5D0F /* AddItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877C62020E99D006E5D0F /* AddItemDelegate.swift */; };
+		8DE877CB2020F34F006E5D0F /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877CA2020F34F006E5D0F /* AddItemViewController.swift */; };
+		8DE877CD2020FBE7006E5D0F /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877CC2020FBE7006E5D0F /* MyCell.swift */; };
+		8DE877CF20210450006E5D0F /* BeatedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE877CE20210450006E5D0F /* BeatedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		8DE8778E2020E1A6006E5D0F /* iOS_BeltExam2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_BeltExam2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE877912020E1A6006E5D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DE877932020E1A6006E5D0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DE877932020E1A6006E5D0F /* BeatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatTableViewController.swift; sourceTree = "<group>"; };
 		8DE877962020E1A6006E5D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DE877992020E1A6006E5D0F /* iOS_BeltExam2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_BeltExam2.xcdatamodel; sourceTree = "<group>"; };
 		8DE8779B2020E1A6006E5D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		8DE877B02020E1A6006E5D0F /* iOS_BeltExam2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_BeltExam2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE877B42020E1A6006E5D0F /* iOS_BeltExam2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_BeltExam2UITests.swift; sourceTree = "<group>"; };
 		8DE877B62020E1A6006E5D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE877C62020E99D006E5D0F /* AddItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemDelegate.swift; sourceTree = "<group>"; };
+		8DE877CA2020F34F006E5D0F /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		8DE877CC2020FBE7006E5D0F /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		8DE877CE20210450006E5D0F /* BeatedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				8DE877912020E1A6006E5D0F /* AppDelegate.swift */,
-				8DE877932020E1A6006E5D0F /* ViewController.swift */,
+				8DE877CA2020F34F006E5D0F /* AddItemViewController.swift */,
+				8DE877932020E1A6006E5D0F /* BeatTableViewController.swift */,
+				8DE877CC2020FBE7006E5D0F /* MyCell.swift */,
 				8DE877952020E1A6006E5D0F /* Main.storyboard */,
+				8DE877CE20210450006E5D0F /* BeatedTableViewController.swift */,
+				8DE877C62020E99D006E5D0F /* AddItemDelegate.swift */,
 				8DE8779B2020E1A6006E5D0F /* Assets.xcassets */,
 				8DE8779D2020E1A6006E5D0F /* LaunchScreen.storyboard */,
 				8DE877A02020E1A6006E5D0F /* Info.plist */,
@@ -262,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE877942020E1A6006E5D0F /* ViewController.swift in Sources */,
+				8DE877942020E1A6006E5D0F /* BeatTableViewController.swift in Sources */,
+				8DE877C72020E99D006E5D0F /* AddItemDelegate.swift in Sources */,
 				8DE877922020E1A6006E5D0F /* AppDelegate.swift in Sources */,
+				8DE877CB2020F34F006E5D0F /* AddItemViewController.swift in Sources */,
+				8DE877CD2020FBE7006E5D0F /* MyCell.swift in Sources */,
 				8DE8779A2020E1A6006E5D0F /* iOS_BeltExam2.xcdatamodeld in Sources */,
+				8DE877CF20210450006E5D0F /* BeatedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
